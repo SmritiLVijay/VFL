@@ -1,0 +1,347 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Montserrat';
+
+}
+
+/* Text styling */
+h2 {
+    text-align: center;
+}
+
+/* Navbar styling */
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 87.335059%;
+    overflow: hidden;
+    background-color: #a19ee3;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.top-nav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-nav .nav-center a{
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #ffffff;
+    border: solid black;
+    color: #000000;
+    width: 253px;
+}
+
+
+.top-nav .nav-left {
+    float: left;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.top-nav a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+/* Website Name */
+#Welcome-banner {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    text-decoration: underline;
+    text-decoration-color: #a19ee3;
+    text-decoration-thickness: 0.5rem;
+}
+
+.banner-text {
+    border: solid #a19ee3;
+    padding: 1rem;
+}
+
+/* Main Content Styling */
+/* main {} */
+
+.intro,
+.directory,
+.faculty-profile {
+    margin-bottom: 2rem;
+}
+
+
+#content-container {
+    padding: 6rem 3rem;
+}
+
+/* Search Bar Styling */
+.search-div {
+    width: 50%;
+    padding-left: 30%;
+}
+
+.search-bar input{
+    margin: 2rem 0.7rem 0;
+    padding: 0.7rem;
+    width: 50%;
+    font-family: 'Roboto mono', monospace;
+    border: solid #ffffff;
+    border-radius: 5px;
+    background: linear-gradient(to right, #e2e1f4, #b6b3e9);
+
+}
+
+button{
+    color: #ffffff;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto mono', monospace;
+    background-color: #000000;
+    padding: 0.7rem;
+
+}
+
+button:hover{
+    border-color: #ffffff;
+    background-color: #a19ee3;
+    color: #000000;
+}
+
+/*Autocomplete list*/
+.autocomplete-items {
+    font-family: sans-serif;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    margin: 0 0.7rem;
+    width: 54%;
+    overflow: auto;
+    max-height: 50vh;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  .autocomplete-active {
+    background-color: #8782d7 !important; 
+    color: #ffffff; 
+  }
+
+
+/* Intro Text Alignment */
+.intro p {
+    margin: 0;
+    text-align: center;
+}
+
+.intro h2 {
+    text-align: center;
+}
+
+/* faculty profile and info */
+
+.faculty-profile {
+    padding: 1rem 3rem;
+    margin-top: 6rem;
+}
+
+.faculty-info {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+
+}
+
+.directory {
+    margin-top: 9rem;
+}
+
+/* Table Styling */
+table {
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #3f3a3a;
+    color: #ffffff;
+}
+
+td {
+    width: 100px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #a19ee3;
+    font-family: 'Roboto mono', monospace;
+    font-size: small;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Kushagra's change */
+
+.container {
+    margin: auto;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #3f3a3a;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.container input{
+    display: block; 
+    margin: auto;
+    width: 94%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: linear-gradient(to right, #e2e1f4, #b6b3e9);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: #3f3a3a;
+}
+
+.container button {
+    display: block; 
+    margin: auto;
+    width: 100%;
+    margin-top: 1rem; 
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #3f3a3a;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #a19ee3;
+    color: #000000;
+}
+
+ .container input::placeholder {
+    color: #6e6e6e;
+    font-size: 0.9rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.message {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #d9534f; 
+}
+
+.message.success {
+    color: #5cb85c;
+}
+
+.free-timings {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.free-timings h2 {
+    text-align: center;
+    color: #000000;
+}
+
+#timings-container {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 3rem;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facultyTimings>
+    <timing>
+        <day>Monday</day>
+        <start>10:00 AM</start>
+        <end>12:00 PM</end>
+    </timing>
+    <timing>
+        <day>Tuesday</day>
+        <start>10:00 AM</start>
+        <end>12:00 PM</end>
+    </timing>
+    <timing>
+        <day>Wednesday</day>
+        <start>2:00 PM</start>
+        <end>4:00 PM</end>
+    </timing>
+    <timing>
+        <day>Thursday</day>
+        <start>1:00 PM</start>
+        <end>3:00 PM</end>
+    </timing>
+    <timing>
+        <day>Friday</day>
+        <start>1:00 PM</start>
+        <end>3:00 PM</end>
+    </timing>
+</facultyTimings>

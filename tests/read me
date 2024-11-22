@@ -1,0 +1,18 @@
+First download the testing framework
+    composer require --dev phpunit/phpunit
+
+in DatabaseTest.php, for the line         
+        $db = new PDO('mysql:host=localhost;dbname=your_db', 'username', 'password');
+provide the correct database url
+
+
+To run all tests:
+    vendor/bin/phpunit --configuration phpunit.xml
+
+To run a specific test:
+    vendor/bin/phpunit tests/FacultyTest.php
+
+To generate a code coverage report using:
+    vendor/bin/phpunit --coverage-html coverage-report
+
+

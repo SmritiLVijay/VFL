@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Free Timings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-left"><a href="">VFL</a></div>
+            <a href="index.php"><i class="fas fa-home"></i></a>
+            <a href="https://github.com/SmritiLVijay/VIT-Faculty-Locator"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy;VIT Faculty Locator.</p>
+    </footer>
+
+    <main>
+        <section class="free-timings">
+            <h2>Free Days and Timings</h2>
+            <div id="timings-container"></div>
+        </section>
+    </main>
+
+
+    <script>
+        fetch('free_timings.xml')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(data, "application/xml");
+                const timingsContainer = document.getElementById('timings-container');
+
+                const timings = xml.getElementsByTagName('timing');
+                for (let i = 0; i < timings.length; i++) {
+                    const day = timings[i].getElementsByTagName('day')[0].textContent;
+                    const startTime = timings[i].getElementsByTagName('start')[0].textContent;
+                    const endTime = timings[i].getElementsByTagName('end')[0].textContent;
+
+                    const timingElement = document.createElement('p');
+                    timingElement.textContent = `${day}: ${startTime} - ${endTime}`; 
+                    timingsContainer.appendChild(timingElement);
+                }
+            })
+            .catch(error => console.error('XML ERROR :', error)); //console error
+    </script>
+</body>
+
+</html>
